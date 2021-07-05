@@ -63,8 +63,8 @@ DEBUG=''
 #DEBUG='True'
 [[ -n $DEBUG ]] && set -x
 #判断空字符
-#-z 判断变量值是否为空，且字符串长度不为零，则为True。
-#-n 判断变量值是否为空，且字符串长度为零，则为True。
+#-z 判断变量值赋值，且字符串长度不为零，则为False。
+#-n 判断变量值赋值，且字符串长度不为零，则为True。
 #--------------列如-----------
 function if_exsit() {
     declare  a  #直接使用会报错a: unbound variable，需要先赋值
