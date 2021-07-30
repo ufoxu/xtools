@@ -3,25 +3,15 @@
 set -e
 #-e	任何语句的执行结果不是true则应该退出shell
 function set_e1() {
-    function return0() {
-        return 0
-    }
-
-    function return1() {
-        return 1
-    }
+    function return0() { return 0; }
+    function return1() { return 1; }
     return1
-
+    echo "添加set -e 后，此echo不会输出"
     }
 
 function set_e2() {
-    function return20() {
-        return 0
-    }
-
-    function return21() {
-        return 1
-    }
+    function return20() { return 0; }
+    function return21() { return 1; }
 
     #可以如下判断 方法1
     return21  && ( echo "command success";echo "command success1";)
@@ -36,5 +26,6 @@ function set_e2() {
     fi
     }
 
-set_e2
-#set_e1
+#set_e2
+set_e1
+
