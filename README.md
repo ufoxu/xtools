@@ -10,6 +10,9 @@
 
 - shellcheck: [https://www.shellcheck.net/](https://www.shellcheck.net/)
 
+
+- malongshuai: [https://github.com/malongshuai/rm_is_safe](https://github.com/malongshuai/rm_is_safe)
+
   
 
 >
